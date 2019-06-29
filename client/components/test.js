@@ -1,5 +1,6 @@
 import React, {useState, Component} from 'react'
 import ReactMapGL, {Marker} from 'react-map-gl'
+import {Box, Button} from '@material-ui/core/'
 // import 'typeface-roboto'
 
 const data = require('../../server/api/data2.json')
@@ -25,6 +26,9 @@ export default function Test() {
 
   return (
     <div>
+      <Box component="span" m={1}>
+        <Button />
+      </Box>
       <h1>I am here</h1>
       <ReactMapGL
         {...viewport}
