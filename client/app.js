@@ -1,11 +1,4 @@
 import React from 'react'
-import {
-  VictoryBar,
-  VictoryChart,
-  VictoryAxis,
-  VictoryTheme,
-  VictoryStack
-} from 'victory'
 import SearchAppBar from './components/searchappbar'
 
 import {Navbar} from './components'
