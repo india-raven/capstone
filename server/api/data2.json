@@ -1,0 +1,31 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-75.98, 42.2068]
+      },
+      "type": "Feature",
+      "properties": {
+        "city": "Binghamton",
+        "averagetemperature": 24.502,
+        "averagetemperatureuncertainty": 3.641,
+        "country": "United States"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.1017, 40.7939]
+      },
+      "type": "Feature",
+      "properties": {
+        "city": "Islip",
+        "averagetemperature": 24.998,
+        "averagetemperatureuncertainty": 1.325,
+        "country": "United States"
+      }
+    }
+  ]
+}

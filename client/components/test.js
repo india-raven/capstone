@@ -1,14 +1,27 @@
-import React, {useState} from 'react'
+import React, {useState, Component} from 'react'
 import ReactMapGL, {Marker} from 'react-map-gl'
 
+const data = require('../../server/api/data2.json')
+
 export default function Test() {
+  // constructor() {
+  //   super()
+  //   this.state = {
+  //     f: ''
+  //   }
+  // }
+
+  // render() {
   const [viewport, setViewport] = useState({
     latitude: 40.705093,
     longitude: -74.009214,
     width: '100vw',
     height: '100vh',
-    zoom: 10
+    zoom: 3
   })
+
+  console.log(data)
+
   return (
     <div>
       <ReactMapGL
@@ -19,10 +32,23 @@ export default function Test() {
           setViewport(viewport)
         }}
       >
-        markers here
+        {data.features.map(spot => {
+          return (
+            <Marker
+              latitude={spot.geometry.coordinates[1]}
+              longitude={spot.geometry.coordinates[0]}
+            >
+              <button type="button">{spot.properties.city}</button>
+              <button type="button">
+                Average Temperature: {spot.properties.averagetemperature}
+              </button>
+            </Marker>
+          )
+        })}
       </ReactMapGL>
     </div>
   )
+  // }
 }
 
 // const dummyData = {
