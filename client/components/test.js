@@ -26,10 +26,6 @@ export default function Test() {
 
   return (
     <div>
-      <Box component="span" m={1}>
-        <Button />
-      </Box>
-      <h1>I am here</h1>
       <ReactMapGL
         {...viewport}
         mapboxApiAccessToken="pk.eyJ1IjoiZGFudHJhY3kiLCJhIjoiY2p2MmptbDVxMDNwNjQ0bno2c2xvYTVubyJ9.7qXQ7dYRVXrHA52FL4SSAQ"

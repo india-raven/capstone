@@ -5,7 +5,8 @@ import {
   IconButton,
   Typography,
   InputBase,
-  Button
+  Button,
+  Link
 } from '@material-ui/core'
 import {fade, makeStyles} from '@material-ui/core/styles'
 import MenuIcon from '@material-ui/icons/Menu'
@@ -75,7 +76,7 @@ export default function SearchAppBar() {
   return (
     <div className={classes.root}>
       <AppBar position="static">
-        <Toolbar style={{backgroundColor: 'red'}}>
+        <Toolbar style={{backgroundColor: '#006600'}}>
           <IconButton
             edge="start"
             className={classes.menuButton}
@@ -85,11 +86,10 @@ export default function SearchAppBar() {
             <MenuIcon />
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
-            Home
+            <Button className={classes.button}>Home</Button>
+            <Button className={classes.button}>Job board</Button>
           </Typography>
-          <Button color="white" className={classes.button}>
-            Job board
-          </Button>
+
           <div className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon />
