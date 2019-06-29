@@ -25,7 +25,7 @@ export default function Test() {
   console.log(data)
 
   return (
-    <div>
+    <div style={{zIndex: 1}}>
       <ReactMapGL
         {...viewport}
         mapboxApiAccessToken="pk.eyJ1IjoiZGFudHJhY3kiLCJhIjoiY2p2MmptbDVxMDNwNjQ0bno2c2xvYTVubyJ9.7qXQ7dYRVXrHA52FL4SSAQ"
