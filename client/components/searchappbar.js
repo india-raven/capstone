@@ -4,7 +4,8 @@ import {
   Toolbar,
   IconButton,
   Typography,
-  InputBase
+  InputBase,
+  Button
 } from '@material-ui/core'
 import {fade, makeStyles} from '@material-ui/core/styles'
 import MenuIcon from '@material-ui/icons/Menu'
@@ -16,6 +17,11 @@ const useStyles = makeStyles(theme => ({
   },
   menuButton: {
     marginRight: theme.spacing(2)
+  },
+  button: {
+    margin: theme.spacing(1),
+    flexGrow: 1,
+    color: 'white'
   },
   title: {
     flexGrow: 1,
@@ -69,7 +75,7 @@ export default function SearchAppBar() {
   return (
     <div className={classes.root}>
       <AppBar position="static">
-        <Toolbar>
+        <Toolbar style={{backgroundColor: 'red'}}>
           <IconButton
             edge="start"
             className={classes.menuButton}
@@ -79,8 +85,11 @@ export default function SearchAppBar() {
             <MenuIcon />
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
-            Material-UI
+            Home
           </Typography>
+          <Button color="white" className={classes.button}>
+            Job board
+          </Button>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon />
