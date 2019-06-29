@@ -6,6 +6,7 @@ import {
   VictoryTheme,
   VictoryStack
 } from 'victory'
+import SearchAppBar from './components/searchappbar'
 
 import {Navbar} from './components'
 import Routes from './routes'
@@ -17,6 +18,7 @@ const App = () => {
     <div>
       {/* <Navbar />
       <Routes /> */}
+      <SearchAppBar />
       <Test />
     </div>
   )
