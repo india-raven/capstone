@@ -12,9 +12,9 @@ const App = () => {
       {/* <Navbar />
       <Routes /> */}
       <SearchAppBar />
-      <div>
-        <OptionsBox />
-        <Test />
+      <div style={{display: 'flex', flexDirection: 'row'}}>
+        <Test style={{zIndex: 1, position: 'fixed'}} />
+        <OptionsBox style={{zIndex: 2, position: 'fixed'}} />
       </div>
     </div>
   )
