@@ -1,0 +1,29 @@
+{
+  "metadata": {"resultset": {"offset": 1, "count": 3, "limit": 25}},
+  "results": [
+    {
+      "uid": "gov.noaa.ncdc:C00861",
+      "mindate": "1763-01-01",
+      "maxdate": "2019-06-23",
+      "name": "Daily Summaries",
+      "datacoverage": 1,
+      "id": "GHCND"
+    },
+    {
+      "uid": "gov.noaa.ncdc:C00946",
+      "mindate": "1763-01-01",
+      "maxdate": "2019-05-01",
+      "name": "Global Summary of the Month",
+      "datacoverage": 1,
+      "id": "GSOM"
+    },
+    {
+      "uid": "gov.noaa.ncdc:C00947",
+      "mindate": "1763-01-01",
+      "maxdate": "2018-01-01",
+      "name": "Global Summary of the Year",
+      "datacoverage": 1,
+      "id": "GSOY"
+    }
+  ]
+}

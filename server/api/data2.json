@@ -26,6 +26,19 @@
         "averagetemperatureuncertainty": 1.325,
         "country": "United States"
       }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.96925, 40.77898]
+      },
+      "type": "Feature",
+      "properties": {
+        "city": "New York City",
+        "averagetemperature": 13.715,
+        "averagetemperatureuncertainty": 1.325,
+        "country": "United States"
+      }
     }
   ]
 }

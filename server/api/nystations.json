@@ -278,5 +278,5 @@
     }
   ]
 
-  // curl -H "token:GJxuPiOTjrVkgsmdHYKUsmZsWuoeBBFs" 'https://www.ncdc.noaa.gov/cdo-web/api/v2/data?datasetid=ANNTEMP&stationid=COOP:3000254&units=metric&startdate=2010-05-01&enddate=2010-05-31'
+  // curl -H "token:GJxuPiOTjrVkgsmdHYKUsmZsWuoeBBFs" 'https://www.ncdc.noaa.gov/cdo-web/api/v2/datasets?datatypeid=TOBS'
 }
