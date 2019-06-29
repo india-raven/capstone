@@ -6,6 +6,7 @@ import * as V from 'victory'
 import history from './history'
 import store from './store'
 import App from './app'
+// import 'typeface-roboto'
 
 // establishes socket connection
 import './socket'

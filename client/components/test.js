@@ -1,5 +1,6 @@
 import React, {useState, Component} from 'react'
 import ReactMapGL, {Marker} from 'react-map-gl'
+// import 'typeface-roboto'
 
 const data = require('../../server/api/data2.json')
 
@@ -24,6 +25,7 @@ export default function Test() {
 
   return (
     <div>
+      <h1>I am here</h1>
       <ReactMapGL
         {...viewport}
         mapboxApiAccessToken="pk.eyJ1IjoiZGFudHJhY3kiLCJhIjoiY2p2MmptbDVxMDNwNjQ0bno2c2xvYTVubyJ9.7qXQ7dYRVXrHA52FL4SSAQ"
